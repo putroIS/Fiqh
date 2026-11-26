@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fikih Ceria - Kelas 5 SD</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">☪ FIKIH CERIA</div>
+  <span>PAI KELAS 5 SD</span>
+</header>
+
+<div class="layout">
+
+  <nav class="sidebar">
+    <h3>MENU PEMBELAJARAN</h3>
+    <button class="nav active" data-page="home">🏠 Beranda</button>
+    <button class="nav" data-page="tujuan">🎯 Tujuan</button>
+    <button class="nav" data-page="materi">📚 Materi Fikih</button>
+    <button class="nav" data-page="latihan">✏️ Latihan</button>
+    <button class="nav" data-page="kuis">📝 Kuis</button>
+    <button class="nav" data-page="hasil">🏆 Hasil Belajar</button>
+  </nav>
+
+  <main class="main">
+
+    <!-- BERANDA -->
+    <section id="home" class="page active">
+      <div class="hero">
+        <div>
+          <span class="label">MEDIA PEMBELAJARAN INTERAKTIF</span>
+          <h1>Belajar Fikih<br>Jadi Lebih Menyenangkan! 🌙</h1>
+          <p>Mari mengenal zakat, infak, dan sedekah serta membiasakan berbagi kepada sesama.</p>
+          <button class="btn gold" onclick="showPage('materi')">Mulai Belajar →</button>
+        </div>
+        <div class="hero-icon">🕌</div>
+      </div>
+
+      <div class="card">
+        <h2>👨‍🎓 Identitas Siswa</h2>
+        <label>Nama Lengkap</label>
+        <input id="nama" type="text" placeholder="Masukkan nama siswa">
+        <label>Kelas</label>
+        <input value="Kelas 5 SD" disabled>
+        <button class="btn" onclick="simpanNama()">Simpan Identitas</button>
+        <p id="pesan"></p>
+      </div>
+
+      <h2 class="heading">Materi Pembelajaran</h2>
+
+      <div class="cards">
+        <div class="mini-card">
+          <div>💰</div>
+          <h3>Zakat</h3>
+          <p>Mengenal kewajiban mengeluarkan sebagian harta.</p>
+        </div>
+        <div class="mini-card">
+          <div>🤲</div>
+          <h3>Infak</h3>
+          <p>Membelanjakan harta untuk kebaikan.</p>
+        </div>
+        <div class="mini-card">
+          <div>❤️</div>
+          <h3>Sedekah</h3>
+          <p>Berbagi kebaikan dengan sesama.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TUJUAN -->
+    <section id="tujuan" class="page">
+      <div class="card">
+        <h1>🎯 Tujuan Pembelajaran</h1>
+        <p>Setelah mengikuti pembelajaran, siswa diharapkan mampu:</p>
+        <ul>
+          <li>Menjelaskan pengertian zakat, infak, dan sedekah.</li>
+          <li>Menyebutkan macam-macam zakat.</li>
+          <li>Menjelaskan ketentuan dasar zakat fitrah.</li>
+          <li>Memahami perbedaan zakat, infak, dan sedekah.</li>
+          <li>Menunjukkan perilaku gemar berbagi dalam kehidupan sehari-hari.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- MATERI -->
+    <section id="materi" class="page">
+      <h1>📚 Materi Pembelajaran Fikih</h1>
+      <p class="subtitle">Pelajari setiap materi berikut dengan baik.</p>
+
+      <article class="lesson">
+        <h2>1. Pengertian Zakat 💰</h2>
+        <p>Zakat adalah sejumlah harta tertentu yang wajib dikeluarkan oleh seorang muslim yang memenuhi syarat dan diberikan kepada orang-orang yang berhak menerimanya.</p>
+        <div class="info">
+          Zakat merupakan salah satu rukun Islam.
+        </div>
+      </article>
+
+      <article class="lesson">
+        <h2>2. Macam-Macam Zakat</h2>
+        <h3>A. Zakat Fitrah</h3>
+        <p>Zakat fitrah adalah zakat yang wajib dikeluarkan oleh setiap muslim yang memenuhi syarat pada bulan Ramadan sebelum salat Idulfitri.</p>
+        <p>Besarnya zakat fitrah umumnya 1 sha' makanan pokok, yang sering diperkirakan sekitar 2,5 kg atau 3 liter beras. Ikuti ketentuan lembaga zakat setempat.</p>
+
+        <h3>B. Zakat Mal</h3>
+        <p>Zakat mal adalah zakat atas harta yang telah memenuhi syarat tertentu, seperti nisab dan haul untuk jenis harta yang mensyaratkannya.</p>
+      </article>
+
+      <article class="lesson">
+        <h2>3. Orang yang Berhak Menerima Zakat</h2>
+        <p>Orang yang berhak menerima zakat disebut mustahik. Ada delapan golongan (asnaf):</p>
+        <ol>
+          <li>Fakir</li>
+          <li>Miskin</li>
+          <li>Amil</li>
+          <li>Mualaf</li>
+          <li>Riqab</li>
+          <li>Gharim</li>
+          <li>Fisabilillah</li>
+          <li>Ibnu sabil</li>
+        </ol>
+      </article>
+
+      <article class="lesson">
+        <h2>4. Pengertian Infak 🤲</h2>
+        <p>Infak adalah mengeluarkan atau membelanjakan sebagian harta untuk kepentingan yang baik sesuai ajaran Islam.</p>
+        <h3>Contoh Infak:</h3>
+        <ul>
+          <li>Menyumbangkan uang untuk pembangunan masjid.</li>
+          <li>Membantu korban bencana.</li>
+          <li>Memberikan bantuan kepada orang yang membutuhkan.</li>
+        </ul>
+      </article>
+
+      <article class="lesson">
+        <h2>5. Pengertian Sedekah ❤️</h2>
+        <p>Sedekah adalah pemberian atau perbuatan baik yang dilakukan dengan ikhlas karena Allah Swt. Sedekah tidak hanya berupa uang atau barang.</p>
+        <h3>Contoh Sedekah:</h3>
+        <ul>
+          <li>Memberikan makanan kepada teman.</li>
+          <li>Membantu orang tua.</li>
+          <li>Menyingkirkan benda berbahaya dari jalan.</li>
+          <li>Tersenyum kepada orang lain.</li>
+        </ul>
+      </article>
+
+      <article class="lesson">
+        <h2>6. Perbedaan Zakat, Infak, dan Sedekah</h2>
+        <div class="table-wrap">
+          <table>
+            <tr><th>Zakat</th><th>Infak</th><th>Sedekah</th></tr>
+            <tr>
+              <td>Wajib jika memenuhi syarat</td>
+              <td>Dikeluarkan untuk kebaikan</td>
+              <td>Dapat berupa harta atau perbuatan baik</td>
+            </tr>
+          </table>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <h2>7. Hikmah Berzakat dan Berbagi</h2>
+        <ul>
+          <li>Membersihkan dan menyucikan harta.</li>
+          <li>Menumbuhkan rasa kepedulian.</li>
+          <li>Membantu orang yang membutuhkan.</li>
+          <li>Mempererat persaudaraan.</li>
+          <li>Melatih sifat dermawan.</li>
+        </ul>
+      </article>
+
+      <div class="card">
+        <h2>🌟 Ayo Berlatih!</h2>
+        <p>Sudah memahami materi? Sekarang uji pengetahuanmu.</p>
+        <button class="btn" onclick="showPage('latihan')">Mulai Latihan →</button>
+      </div>
+    </section>
+
+    <!-- LATIHAN -->
+    <section id="latihan" class="page">
+      <div class="card">
+        <h1>✏️ Latihan Pemahaman</h1>
+        <p>Jawablah pertanyaan berikut secara lisan atau tulis di buku.</p>
+        <div class="question">
+          <h3>1. Apa pengertian zakat?</h3>
+          <p>................................................................</p>
+        </div>
+        <div class="question">
+          <h3>2. Sebutkan dua macam zakat!</h3>
+          <p>................................................................</p>
+        </div>
+        <div class="question">
+          <h3>3. Siapa yang disebut mustahik?</h3>
+          <p>................................................................</p>
+        </div>
+        <div class="question">
+          <h3>4. Apa perbedaan infak dan sedekah?</h3>
+          <p>................................................................</p>
+        </div>
+        <div class="question">
+          <h3>5. Sebutkan tiga contoh sedekah dalam kehidupan sehari-hari!</h3>
+          <p>................................................................</p>
+        </div>
+        <button class="btn" onclick="showPage('kuis')">Lanjut ke Kuis →</button>
+      </div>
+    </section>
+
+    <!-- KUIS -->
+    <section id="kuis" class="page">
+      <div class="card">
+        <h1>📝 Kuis Fikih</h1>
+        <p>Kerjakan 10 soal berikut. Pilih satu jawaban yang paling tepat.</p>
+        <div id="quizArea"></div>
+        <button class="btn" id="submitQuiz" onclick="periksaKuis()">Periksa Jawaban</button>
+        <div id="quizResult"></div>
+      </div>
+    </section>
+
+    <!-- HASIL -->
+    <section id="hasil" class="page">
+      <div class="card result">
+        <div class="trophy">🏆</div>
+        <h1>Hasil Belajar</h1>
+        <h2 id="namaHasil">Nama Siswa</h2>
+        <div class="score" id="nilaiAkhir">0</div>
+        <h3 id="predikat">Belum mengikuti kuis</h3>
+        <p id="detailHasil">Silakan kerjakan kuis terlebih dahulu.</p>
+        <button class="btn" onclick="showPage('kuis')">Ulangi Kuis</button>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <p>☪ FIKIH CERIA | PAI KELAS 5 SD</p>
+  <p>Belajar Fikih, Menjadi Muslim yang Peduli 🌙</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
